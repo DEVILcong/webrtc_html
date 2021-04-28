@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC投屏</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/layer/layer.js"></script>
+    <script type="text/javascript" src="js/layui/layui.js"></script>
+    <script type="text/javascript" src="js/adapter.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+  </head>
+
+  <body>
+
+    <video id="video_container" autoplay controls preload>
+    </video>
+
+    <div id="chooser">
+        <div class="layui-btn-container">
+	  <button type="button" class="layui-btn layui-btn-fluid" onclick="onWanButtonClicked()">公网使用</button>
+          <button type="button" class="layui-btn layui-btn-fluid" onclick="onLanButtonClicked()">局域网使用</button>
+	</div>
+
+      <div id="qrcode-container"></div>
+      <div id="info-container">
+        <img id="success_tag_img"/>
+	<b id="success_tag_info"></b>
+      </div>
+    </div>
+
+    <script>
+       init_all();
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+#chooser{
+    display:none;
+}
+
+#qrcode-container{
+    margin-top:10px;
+    margin-left:180px;
+}
+
+#info-container{
+    margin-top:20px;
+    margin-left:180px;
+}
+
+#video_container{
+    height:100%;
+    width:100%;
+}
